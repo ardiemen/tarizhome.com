@@ -1,0 +1,203 @@
+/*
+Custom CSS for TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+*/
+
+.card-img-custom {
+    max-width: 50%;
+    display: flex;
+    align-self: center;
+    margin-top: 2em;
+}
+
+
+.logonge {
+    max-width: 50%;
+}
+
+.imgtengah{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:190px;
+    width:360px;
+}
+
+/* Timeline custom component */
+.timeline-card {
+    position: relative;
+    margin-left: 16px; }
+  
+  .timeline-card:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    left: -12px;
+    border: 5px solid;
+    z-index: 2; }
+  
+  .timeline-body {
+    border-left: 2px solid #E6E9ED; }
+  
+  .timeline-card-primary:before {
+    border-color: var(--bs-primary); }
+  
+  .timeline-card-info:before {
+    border-color: var(--bs-info); }
+  
+  .timeline-card-secondary:before {
+    border-color: var(--bs-secondary); }
+  
+  .timeline-card-success:before {
+    border-color: var(--bs-teal); }
+
+.strongs{
+  color: #ff8c00;
+}
+/* button atas */
+.button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+.banner-button {
+  display: inline-block;
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-button {
+      font-size: 16px;
+      padding: 6px 10px;
+      display: block;
+      margin-bottom: 10px;
+  }
+}
+
+
+.showcase {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.showcase .slider {
+  display: block;
+  list-style: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.showcase .slider .item {
+  display: block;
+  float: left;
+  position: relative;
+  /* width: 150px;
+  height: 90px; */
+  line-height: 100px;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.showcase .slider .item img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: 0 linear left;
+  -moz-transition: 0 linear left;
+  transition: 0 linear left;
+  opacity: 0.65;
+}
+
+.showcase .slider .item img:hover {
+  opacity: 1.0;
+}
+
+/* POP UP */
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  width: 30%;
+  /* height: 30%; */
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #0044ff;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}

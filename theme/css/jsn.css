@@ -589,8 +589,8 @@ Gallery Section
 }
 
 .jsn-gallery-section .swiper-gallery .swiper-slide img {
-	width: 300px;
-	height: 175px;
+	width: 20px;
+	height: 25px;
 	object-fit: cover;
 }
 
@@ -2810,3 +2810,105 @@ JSN Slider Section Two
 	.button:hover {
 		background: var(--main-color-two);
 	}
+
+
+	/* CUSTOM BARU */
+
+	
+.showcase {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+  }
+  
+  .showcase .slider {
+	display: block;
+	list-style: none;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .showcase .slider .item {
+	display: block;
+	float: left;
+	position: relative;
+	/* width: 150px;
+	height: 90px; */
+	line-height: 100px;
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+  }
+  
+  .showcase .slider .item img {
+	vertical-align: middle;
+	max-width: 100%;
+	max-height: 100%;
+	-webkit-transition: 0 linear left;
+	-moz-transition: 0 linear left;
+	transition: 0 linear left;
+	opacity: 0.65;
+  }
+  
+  .showcase .slider .item img:hover {
+	opacity: 1.0;
+  }
+
+  .custom-slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+	/* slide atas */
+.custom-slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    background-size: cover;
+    background-position: center;
+    height: 730px; /* Ubah tinggi sesuai keinginan */
+}
+
+.slide.active {
+    display: block;
+}
+
+.content-boxed {
+    position: absolute;
+    bottom: 40px; /* Tambahkan jarak dari bawah */
+    left: 40px;  /* Tambahkan jarak dari kiri */
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.5); Tambahkan background semi-transparan */
+    padding: 20px;
+    border-radius: 8px;
+}
+.content-boxed h1, .content-boxed p {
+    color: white; /* Warna teks putih */
+}
+
+.slider-controls .prev, .slider-controls .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.slider-controls .prev {
+    left: 0;
+}
+
+.slider-controls .next {
+    right: 0;
+}

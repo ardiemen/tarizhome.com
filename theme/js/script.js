@@ -570,34 +570,34 @@
     }
 
 	// JSn Benefit carousel
-	if ($('.jsn-benefit-carousel').length) {
-		$('.jsn-benefit-carousel').owlCarousel({
-			loop: true,
-			margin: 10,
-			// stagePadding: 10,
-			nav: true,
-			smartSpeed: 500,
-			autoplay: 4000,
-			navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
-			responsive: {
-				0: {
-					items: 1
-				},
-				480: {
-					items: 1
-				},
-				600: {
-					items: 2
-				},
-				800: {
-					items: 4
-				},
-				1024: {
-					items: 4
-				}
-			}
-		});
-	}
+	// if ($('.jsn-benefit-carousel').length) {
+	// 	$('.jsn-benefit-carousel').owlCarousel({
+	// 		loop: true,
+	// 		margin: 10,
+	// 		// stagePadding: 10,
+	// 		nav: true,
+	// 		smartSpeed: 500,
+	// 		autoplay: 4000,
+	// 		navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+	// 		responsive: {
+	// 			0: {
+	// 				items: 1
+	// 			},
+	// 			480: {
+	// 				items: 1
+	// 			},
+	// 			600: {
+	// 				items: 2
+	// 			},
+	// 			800: {
+	// 				items: 4
+	// 			},
+	// 			1024: {
+	// 				items: 4
+	// 			}
+	// 		}
+	// 	});
+	// }
 
 	// Client Item Carousel
 	if ($('.jsn-client-carousel').length) {
